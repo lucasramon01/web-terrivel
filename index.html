@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Terrível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="http://terrivel.herokuapp.com/monster" method="POST">
+      <h1>Alimente O Incrível Monstro Verde</h1>
+      <section><label>Número de Pedras <input type="number" name="num_pedras" min="0" ></label></section>
+      <section><label>Tamanho das Pedras <input type="number" name="tam_pedras" min="1" max="7" step="0,5" value="3"></label></section>
+      <section><label>Nome: <input type="text" name="nome" pattern="^[a-zA-Z]+$"></label></section>
+      <section><label>Cor do Céu 1: <input type="color" name="corCeu1"></label></section>
+      <section><label>Cor do Céu 2: <input type="color" name="corCeu2"></label></section>
+      <section><label>Tipo de Pedra:
+      <select name="tipo_pedras">
+        <option></option>
+        <option value="marroada">Marroada</option>
+        <option value="ametista">Ametista</option>
+        <option value="topazio">Topázio</option>
+        <option value="espinela">Espinela</option>
+      </select></label></section>
+      <section><label>Tipo de Pedras Sortidas:</label>
+        <label> <input name="tipo_pedras_sortidas" type="radio" value="sim">Sim</label>
+        <label> <input name="tipo_pedras_sortidas" type="radio" value="nao">Não</label>
+      </section> 
+      <section><input type="submit" value="Enviar"></section>
+    </form>
+   </body>
+</html>

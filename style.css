@@ -1,0 +1,17 @@
+form {
+    position:absolute;
+    left:20%;   
+}
+
+section {
+    margin-top: 10px;    
+}
+
+label {
+    font-style: Arial;
+    font-size: 18px;
+}
+
+body {
+    background-color: pink;
+}
